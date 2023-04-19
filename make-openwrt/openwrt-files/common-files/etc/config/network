@@ -1,0 +1,38 @@
+
+config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+
+config interface 'lan'
+	option ifname 'eth1'
+	option proto 'static'
+	option netmask '255.255.255.0'
+	option delegate '0'
+	option dns '114.114.114.114 119.29.29.29 192.168.2.155 192.168.2.1'
+	option ipaddr '192.168.1.6'
+	option gateway '192.168.1.6'
+	option broadcast '192.168.1.255'
+
+config interface 'wan'
+	option _orig_ifname 'eth0'
+	option _orig_bridge 'false'
+	option ifname 'eth0'
+	option proto 'dhcp'
+
+config device 'wan_wan_dev'
+	option name 'wan'
+	option macaddr 'B2:B3:B3:B4:4d:e1'
+
+config interface 'docker'
+	option ifname 'docker0'
+	option proto 'none'
+	option auto '0'
+
+config device
+	option type 'bridge'
+	option name 'docker0'
+
