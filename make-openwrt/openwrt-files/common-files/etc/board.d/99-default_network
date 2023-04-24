@@ -1,5 +1,5 @@
-# The default order of phy interfaces for r68s is
-# eth1(1G) eth0(2.5G) eth3(2.5G) eth2(2.5G)
+# The default order of phy interfaces for ipc is
+# eth1(1G) eth0(2.5G) eth3(1G) eth2(2.5G)eth4(1G)eth5(1G)
 # Reset to 0 1 2 3 for intuitive
 
 . /lib/functions/uci-defaults.sh
