@@ -74,7 +74,7 @@ depends_repo="https://github.com/gwx11111111/amlogic-s9xxx-armbian/tree/main/bui
 depends_repo="${depends_repo//tree\/main/trunk}"
 
 # Firmware files download repository
-firmware_repo="https://github.com/ophub/firmware/tree/main/firmware"
+firmware_repo="https://github.com/gwx11111111/firmware/tree/main/firmware"
 # Convert firmware repository address to svn format
 firmware_repo="${firmware_repo//tree\/main/trunk}"
 
