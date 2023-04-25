@@ -824,6 +824,7 @@ refactor_rootfs() {
     [[ -f "etc/modules.d/usb-net-asix-ax88179" ]] || echo "ax88179_178a" >etc/modules.d/usb-net-asix-ax88179
     # brcmfmac built-in wireless network card Driver
     echo "brcmfmac" >etc/modules.d/brcmfmac
+    echo "bcmdhd" >etc/modules.d/bcmdhd
     echo "brcmutil" >etc/modules.d/brcmutil
     # USB Realtek RTL8188EU Wireless LAN Driver
     echo "r8188eu" >etc/modules.d/rtl8188eu
